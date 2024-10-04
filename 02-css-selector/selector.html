@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector Reference</title>
+    <style>
+      #title {
+        color: blueviolet;
+      }
+
+      #home {
+        color: blueviolet;
+      }
+
+      .nav {
+        color: pink;
+      }
+
+      .menu {
+        color: green;
+      }
+
+      p {
+        color: blue;
+        font-size: 20px;
+      }
+
+      span.bold {
+        font-weight: bold;
+      }
+
+      div .red {
+        color: red;
+      }
+
+      div > span {
+        color: yellowgreen;
+        font-weight: bold;
+      }
+
+      div p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <a href="/" id="home" style="color: aqua;">Home</a>
+      <a href="/" class="menu">About</a>
+      <a href="/" class="menu">Project</a>
+    </div>
+
+    <h1 id="title">Hello World</h1>
+  
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac leo
+      non orci euismod suscipit in non lacus. Ut malesuada massa felis,
+      tincidunt viverra mauris semper et. Sed eu rhoncus massa. Morbi nec est
+      iaculis, vestibulum magna ac, pellentesque felis. Mauris convallis
+      tincidunt felis eu hendrerit. In at facilisis nisi, ut dignissim purus.
+    </p>
+
+    <span class="bold">This is a bold text.</span>
+
+    <div style="background-color: #03fc0b">
+      <h3 class="red">This is another hello world</h3>
+      <p>This is blue element</p>
+    </div>
+
+    <div>
+      <span>Span inside a div</span>
+      <span>span 2</span>
+    </div>
+  </body>
+</html>
